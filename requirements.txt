@@ -6,7 +6,7 @@ iniconfig==2.0.0
 macholib==1.16.3
 mccabe==0.6.1
 numpy==1.22.0
-opencv-python
+opencv-python==4.5.4.60
 packaging==24.0
 pluggy==1.5.0
 py==1.11.0
@@ -17,5 +17,3 @@ pytest==6.2.5
 toml==0.10.2
 typing==3.7.4.1
 yapf==0.28.0
-opencv-contrib-python
-
