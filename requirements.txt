@@ -17,3 +17,5 @@ pytest==6.2.5
 toml==0.10.2
 typing==3.7.4.1
 yapf==0.28.0
+opencv-contrib-python
+
