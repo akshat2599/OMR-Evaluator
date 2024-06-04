@@ -139,7 +139,7 @@ def process_input(
         answers_results.save(output_folder,
                              "results",
                              sort_results,
-                             timestamp=files_timestamp)
+                             timestamp="")
 
         if rejected_files.row_count == 0:
             success_string = "✔️ All exams processed and saved.\n"
