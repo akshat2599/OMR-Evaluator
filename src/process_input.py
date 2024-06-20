@@ -160,14 +160,14 @@ def process_input(
             answers_results.save(output_folder,
                                  "rearranged_results",
                                  sort_results,
-                                 timestamp=files_timestamp)
+                                 timestamp="")
             success_string += "✔️ Results rearranged based on arrangement file.\n"
 
             keys_results.delete_field_column(grid_i.Field.TEST_FORM_CODE)
             keys_results.save(output_folder,
                               "key",
                               sort_results,
-                              timestamp=files_timestamp,
+                              timestamp="",
                               transpose=True)
 
             success_string += "✔️ Key processed and saved.\n"
@@ -177,7 +177,7 @@ def process_input(
             scores.save(output_folder,
                         "rearranged_scores",
                         sort_results,
-                        timestamp=files_timestamp)
+                        timestamp="")
             success_string += "✔️ Scored results processed and saved."
         elif (arrangement_file):
             success_string += "❌ Arrangement file and keys were ignored because more than one key was found."
@@ -192,7 +192,7 @@ def process_input(
             scores.save(output_folder,
                         "scores",
                         sort_results,
-                        timestamp=files_timestamp)
+                        timestamp="")
             success_string += "✔️ All scored results processed and saved."
 
         if (output_mcta):
